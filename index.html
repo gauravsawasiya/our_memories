@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8f5b64" />
+  <meta name="description" content="Our Memory Book — 2018 to forever." />
+  <title>Our Memory Book ♥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Our Memory Book home">
+      <span class="brand-heart">♡</span>
+      <span>Our Memory Book</span>
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#timeline">Our Story</a>
+      <a href="#memories">Memories</a>
+    </nav>
+
+    <a class="header-heart" href="#memories" aria-label="Open memories">♡</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> TOGETHER SINCE 2018 <span></span></p>
+        <h1>Our Story <span>♡</span></h1>
+        <p class="hero-subtitle">Same people, new chapters,<br>countless memories...</p>
+        <p class="years">2018 <b>—</b> 2026</p>
+        <a class="primary-button" href="#timeline">Explore Our Memories <span>→</span></a>
+      </div>
+
+      <p class="hero-note">Grateful<br>for every<br>chapter<br>with you ♡</p>
+
+      <div id="yearRail" class="year-rail" aria-label="Memory years"></div>
+
+      <a class="scroll-cue" href="#timeline">
+        <span class="mouse"><i></i></span>
+        <span>Scroll down to explore</span>
+        <b>⌄</b>
+      </a>
+    </section>
+
+    <section id="timeline" class="intro section-paper">
+      <div class="doodle doodle-left">Different years...<br><span>Same us ♡</span></div>
+      <div class="intro-copy">
+        <p class="section-kicker">A TIMELINE OF US</p>
+        <h2>8 Years. Countless Memories.</h2>
+        <p>From the first hello in 2018 to all the little moments that made us, this is our journey — and it’s still being written...</p>
+        <div class="tiny-heart">♡</div>
+      </div>
+      <div class="polaroid polaroid-left">
+        <img class="placeholder-photo" src="photos\extra\placeholder_photo.jpeg" alt="A memory from 2018">
+        <span>one of many beginnings</span>
+      </div>
+      <div class="polaroid polaroid-right">
+        <img class="placeholder-photo" src="photos\extra\placeholder_photo.jpeg" alt="A recent memory">
+        <span>and many more to come</span>
+      </div>
+    </section>
+
+    <section id="memories" class="memories section-paper">
+      <div class="section-heading">
+        <p class="section-kicker">CHAPTERS</p>
+        <h2>Choose a year</h2>
+        <p>Every year is a chapter. Every photo is a little piece of us.</p>
+      </div>
+      <div id="yearGrid" class="year-grid"></div>
+    </section>
+
+    <section id="yearView" class="year-view section-paper" hidden>
+      <div class="year-view-top">
+        <button id="backToYears" class="text-button">← All years</button>
+        <span id="selectedYearLabel"></span>
+      </div>
+      <div class="chapter-heading">
+        <p class="section-kicker">CHAPTER</p>
+        <h2 id="selectedYear">2018</h2>
+        <p id="selectedYearText">The beginning of something beautiful.</p>
+      </div>
+      <div id="photoGrid" class="photo-grid"></div>
+      <p class="add-hint">Add as many photos as you want by placing them in <code>photos/<span id="photoYearHint">2018</span>/</code> and updating <code>memories.js</code>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-heart">♡</div>
+    <p>Our story, one memory at a time.</p>
+    <small>Made with love · 2018 — forever</small>
+  </footer>
+
+  <script src="memories.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
